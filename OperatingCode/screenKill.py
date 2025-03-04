@@ -22,7 +22,7 @@ def cleanup(pi_hosts):
 
 if __name__ == "__main__":
 
-    pi_hosts = [f"pi{i}.wifi.etsu.edu" for i in range(1, 21)]
+    pi_hosts = [f"pi{i}.wifi.edu" for i in range(1, 21)] #replace this with your own hostname pattern
     current_date = datetime.now().strftime("%Y-%m-%d")
     current_time = datetime.now().strftime("%H%M%S")
 
