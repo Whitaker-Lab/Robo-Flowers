@@ -10,5 +10,4 @@ The goal of this project is to create robotic flowers to simulate floral environ
 
 ---
 
-## 📁 Repository Structure
 
