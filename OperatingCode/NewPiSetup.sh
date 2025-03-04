@@ -19,8 +19,8 @@ for i in {1..20}; do
     sudo apt update && sudo apt upgrade -y
     echo "Finished Updating"
 
-    sudo apt install -y python3-pandas python3-numpy python3-opencv screen
-    echo "Finished installing python packages (opencv, pandas, numpy) and screen"
+    sudo apt install -y screen python3-numpy==1.21.0 python3-pandas python3-opencv python3-rpi-lgpio#confirm with josh that this opencv will work (vs the headless option isntalled with pip)
+    echo "Finished installing python packages (opencv, pandas, numpy), GPIO, and screen"
     
     # Check if rpi-connect-lite exists before attempting installation
     if apt-cache show rpi-connect-lite &>/dev/null; then
