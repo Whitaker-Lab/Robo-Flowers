@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 # Hard-coded output directory
-OUTPUT_DIRECTORY = # Replace this with your desired output directory path
+OUTPUT_DIRECTORY = # Replace this with the full path to your desired output directory
 
 
 # Function to extract the date from a filename
