@@ -25,7 +25,7 @@ def check_cameras(pi_num):
     """
     Check if a USB camera is connected to a remote device.
     """
-    hostname = f"pi{pi_num}.wifi.etsu.edu" #replace this with your own hostname pattern
+    hostname = f"pi{pi_num}.wifi.edu" #replace this with your own hostname pattern
     username = f"pi{pi_num}"
     try:
 
