@@ -33,7 +33,7 @@ def send_scripts_to_pi(pi_num, IRScript, CameraScript):
     """
     Executes a script on a remote Pi using SSH within a screen session.
     """
-    hostname = f"pi{pi_num}.wifi.etsu.edu" #replace with hostname pattern
+    hostname = f"pi{pi_num}.wifi.edu" #replace with hostname pattern
     username = f"pi{pi_num}"
     
     try:
@@ -56,7 +56,7 @@ def execute_scripts_on_pi(pi_num, IRScript, CameraScript):
     """
     Executes IR and camera scripts concurrently on a remote Pi using SSH within a screen session.
     """
-    hostname = f"pi{pi_num}.wifi.etsu.edu"
+    hostname = f"pi{pi_num}.wifi.edu"
     username = f"pi{pi_num}"
 
     try:
@@ -113,7 +113,7 @@ def cleanup(pi_hosts):
 
 if __name__ == "__main__":
 
-    pi_hosts = [f"pi{i}.wifi.etsu.edu" for i in range(1, 21)]
+    pi_hosts = [f"pi{i}.wifi.edu" for i in range(1, 21)] #replace with hostname pattern
     current_date = datetime.now().strftime("%Y-%m-%d")
     current_time = datetime.now().strftime("%H%M%S")
 
