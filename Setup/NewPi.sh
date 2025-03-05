@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#all pis are running 32GB SD cards loaded with the Raspberry Pi OS Lite, Release date: November 19th 2024, System: 64-bit, Kernel version: 6.6, Debian version: 12 (bookworm)
+#all pis are running 32GB SD cards loaded with the Raspberry Pi OS Lite, Release date: November 19th 2024, System: 32-bit, Kernel version: 6.6, Debian version: 12 (bookworm)
 #ssh was enabled during SD card setup and confirmed by checking the ssh file present in the /bootfs directory (otherwise it was created there).  
 
 # Loop through Raspberry Pi numbers from 1 to 20
