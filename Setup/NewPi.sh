@@ -26,9 +26,6 @@ for i in {1..20}; do
     ssh -o ConnectTimeout=5 pi$i@$host "bash -s" <<'EOF'
     set -e  # Exit script on any error
 
-    echo "Enabling SSH..."
-    sudo touch /boot/ssh
-
     # Desired locale
     DESIRED_LOCALE="en_US.UTF-8"
     
