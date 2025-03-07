@@ -19,18 +19,8 @@ for i in {1..20}; do
     sudo apt update && sudo apt upgrade -y
     echo "Finished Updating"
 
-    sudo apt install -y screen python3-numpy python3-pandas python3-opencv python3-rpi-lgpio
-    echo "Finished installing python packages (opencv, pandas, numpy), GPIO, and screen"
-    
-    # Check if rpi-connect-lite exists before attempting installation
-    if apt-cache show rpi-connect-lite &>/dev/null; then
-        sudo apt install -y rpi-connect-lite
-        rpi-connect on
-	loginctl enable-linger
-        echo "Finished rpi-connect"
-    else
-        echo "rpi-connect-lite not found, skipping installation"
-    fi
+    sudo apt install -y screen rpi-connect-lite python3-numpy python3-pandas python3-opencv python3-rpi-lgpio 
+    echo "Finished installing python packages (opencv, pandas, numpy), GPIO, screen, and rpi-connect"
 
     # Execute locale setting commands on the remote Pi
     ssh -o ConnectTimeout=5 pi$i@$host "bash -s" <<'EOF'
